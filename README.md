@@ -1,2 +1,6 @@
 # news-feed
 Tools to scrape from various sources, based on football clubs' social media, with a final product as a news feed.
+
+# How to work with this
+ - websitesFeed allows you to get the latest article from one of the PL clubs websites, with exceptions : Man U, Aston Villa, Southampton, Burnley and Brighton are unscrapable, either because their website loads dynamically or because they use paths to interact between pages. But this still lets you use 15 PL clubs website, including the biggest such as Man City, Everton, (Liverpool) and Tottenham ! The functions defined in this file are used without any arguments, and return an object, with for attributes link, header, thumbnail and topics.
+ - twitterFeed can be used as a very small framework for your work with the Twitter API (a developer account and the credentials are still required). If you want to test if the code works, get_link_from_object(api.user_timeline(id=330262748)[0]) will give you the link to Fabrizio Romano's latest tweet.
